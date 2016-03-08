@@ -27,15 +27,17 @@
         </nav>
     </section>
     <section class="row">
-        <div class="medium-8 medium-centered columns">
+        <div class="medium-8 medium-centered columns" >
             <form action="." method="post">
             
                 <h3>Bienvenido al formulario</h3>
             
-                <div id="owl-form" class="owl-carousel owl-theme">
- 
+                <div id="owl-form" class="owl-carousel owl-theme" >
+                
+                    
+                
                   <div class="item">
-                    <div class="callout">
+                    <div class="callout" data-equalizer-watch>
                       <label>En una reunión difícil, con un ambiente caldeado, soy capaz de hablar con confianza. 
                           <select>
                             <option value="1">Con frecuencia</option>
@@ -64,7 +66,7 @@
                     </div>
                   </div>
                   <div class="item">
-                      <div class="callout">
+                      <div class="callout" data-equalizer-watch>
                       <label>Si no estoy segura de una cosa, puedo pedir ayuda fácilmente.
                           <select>
                             <option value="1">Con frecuencia</option>
@@ -102,10 +104,10 @@
                     </div> <!-- ENdPanel-->
                   </div><!-- EndItem -->
                   <div class="item">
-                      <div class="callout">
+                      <div class="callout" data-equalizer-watch>
                           <h3>Gracias por Contestar todas las preguntas</h3>
                           <p>Ya solo falta enviar la información, pulsa el boton enviar</p>
-                          <p class="text-center"><a data-open="thanksrv" class="hollow button">Enviar Datos</a></p>
+                          <p class="text-center"><a class="hollow button secondary prev">Regresar</a><a data-open="thanksrv" class="hollow button">Enviar Datos</a></p>
                       </div>
                       
                   </div>
@@ -133,13 +135,15 @@
       $(document).foundation();
       $("#owl-form").owlCarousel({
  
-      navigation : true, // Show next and prev buttons
+      
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true,
       navigationText : ["Anterior", "Siguiente"],
       mouseDrag : false,
-      touchDrag : false
+      touchDrag : false,
+      autoHeight : true,
+      transitionStyle:"fade"
       });
       var owl = $("#owl-form");
       $(".next").click(function(){

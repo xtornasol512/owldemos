@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anexo 6</title>
+    <link rel="stylesheet" href="/css/vendor/foundation.css" />
+    <link rel="stylesheet" href="/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="/owl-carousel/owl.transitions.css">
+  </head>
+  <body>
+    
+    <section id="main-header" class="row">
+        <header class="medium-6 medium-centered columns text-center">
+            <div class="panel callout">
+                <h1>Hello, world! OwlCarousel Demos</h1>
+                <h2>Test Asertividad</h2>
+            </div>
+        </header>
+        <nav class="medium-6 medium-centered columns">
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/templates/carousel.html">Carousel 1</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="row">
+        <div class="medium-6 medium-centered columns">
+            <form action="." method="post">
+                <div id="owl-form" class="owl-carousel owl-theme">
+ 
+                  <div class="item">
+                      
+                  </div>
+                  <div class="item">
+                      
+                  </div>
+                  <div class="item">
+                      <h3>Gracias por Contestar todas las preguntas</h3>
+                      <p>Ya solo falta enviar la información, pulsa el boton enviar</p>
+                      <a data-open="thanksrv" class="hollow button">Enviar Datos</a>
+                  </div>
+                 
+                </div> <!-- END owldemo-->                 
+            </form>
+        </div>
+    </section>
+    <footer class="row">
+        <div class="medium-6 medium-centered columns">
+            <h3>Demo with <a target="_blank" href="http://owlgraphic.com/owlcarousel">Owl-carousel</a> & <a target="_blank" href="http://foundation.zurb.com/sites/docs/">Foundation 6</a> <small>Made with Love <3 </small></h3>
+        </div>
+    </footer>
+    <div class="reveal" id="thanksrv" data-reveal>
+      <h3>Gracias por Contestar todas las preguntas</h3>
+      <p>Si gustas puedes regresar al inicio</p>
+      <a href="/" class="hollow button secondary">Inicio</a>
+    </div>
+
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/what-input.min.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).foundation();
+      $("#owl-form").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      navigationText : ["Anterior", "Siguiente"]
+      });
+    </script>
+
+  </body>
+</html>

@@ -14,7 +14,7 @@
     
     <section id="main-header" class="row">
         <header class="medium-6 medium-centered columns text-center">
-            <div class="panel callout">
+            <div class="callout">
                 <h1>Hello, world! OwlCarousel Demos</h1>
                 <h2>Test Asertividad</h2>
             </div>
@@ -27,23 +27,90 @@
         </nav>
     </section>
     <section class="row">
-        <div class="medium-6 medium-centered columns">
+        <div class="medium-8 medium-centered columns">
             <form action="." method="post">
+            
+                <h3>Bienvenido al formulario</h3>
+            
                 <div id="owl-form" class="owl-carousel owl-theme">
  
                   <div class="item">
-                      
+                    <div class="callout">
+                      <label>En una reunión difícil, con un ambiente caldeado, soy capaz de hablar con confianza. 
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+                        <label>Si alguna persona es injusta y agresiva, puedo controlar la situación con confianza.  
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+                        <label>Si alguna persona se muestra irónica conmigo o con otras, puedo responder sin agresividad.  
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+                       <p class="text-center"><a class="hollow button success next">Siguiente</a></p>
+                    </div>
                   </div>
                   <div class="item">
-                      
-                  </div>
+                      <div class="callout">
+                      <label>Si no estoy segura de una cosa, puedo pedir ayuda fácilmente.
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+                        <label>Si creo que se está abusando de mí, soy capaz de denunciarlo sin alterarme. 
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+                        <label>Si alguna persona me pide permiso para hacer algo que no me gusta, por ejemplo, fumar, puedo decirle que no sin sentirme culpable.  
+                          <select>
+                            <option value="1">Con frecuencia</option>
+                            <option value="2">De vez en cuando</option>
+                            <option value="3">Casi nunca</option>
+                            <option value="4">Nunca</option>
+                          </select>
+                        </label>
+
+                    <div class="row">
+                        <div class="small-6 columns">
+                            <a class="hollow button secondary expanded prev">Anterior</a>
+                        </div>
+                        <div class="small-6 columns">
+                            <a class="hollow button success expanded next">Siguiente</a>
+                        </div>
+                    </div>
+                       
+                    </div> <!-- ENdPanel-->
+                  </div><!-- EndItem -->
                   <div class="item">
-                      <h3>Gracias por Contestar todas las preguntas</h3>
-                      <p>Ya solo falta enviar la información, pulsa el boton enviar</p>
-                      <a data-open="thanksrv" class="hollow button">Enviar Datos</a>
+                      <div class="callout">
+                          <h3>Gracias por Contestar todas las preguntas</h3>
+                          <p>Ya solo falta enviar la información, pulsa el boton enviar</p>
+                          <p class="text-center"><a data-open="thanksrv" class="hollow button">Enviar Datos</a></p>
+                      </div>
+                      
                   </div>
                  
-                </div> <!-- END owldemo-->                 
+                </div> <!-- END owldemo-->               
             </form>
         </div>
     </section>
@@ -70,7 +137,16 @@
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true,
-      navigationText : ["Anterior", "Siguiente"]
+      navigationText : ["Anterior", "Siguiente"],
+      mouseDrag : false,
+      touchDrag : false
+      });
+      var owl = $("#owl-form");
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      });
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
       });
     </script>
 

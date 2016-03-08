@@ -1,0 +1,30 @@
+{
+  "name": "owldemos",
+  "version": "1.0.0",
+  "description": "Examples with OwlCarousel 1 and 2 with foundation 6",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtornasol512/owldemos.git"
+  },
+  "keywords": [
+    "javascript",
+    "foundation",
+    "6",
+    "owl",
+    "carousel",
+    "examples"
+  ],
+  "author": "@xtornasol512",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xtornasol512/owldemos/issues"
+  },
+  "homepage": "https://github.com/xtornasol512/owldemos#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
